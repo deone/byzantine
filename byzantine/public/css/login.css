@@ -1,0 +1,80 @@
+#login-error, 
+#login  {
+    margin: 0 auto;
+    width: 380px;
+}
+
+#login-error  {
+    margin-bottom: 1em;
+}
+
+#login label    {
+    width: 7em;
+}
+
+#login fieldset.submit  {
+    padding-left: 10.4em;
+}
+
+
+/* For Forms Only */
+fieldset    {
+    position: relative;
+    float: left;
+    clear: left;
+    width: 100%;
+    margin: 0 0 1.5em 0;
+    padding: 0 0 -1em 0;
+    border-style: none;
+    border-top: 1px solid #bfbab0;
+    background-color: #e6e8fa;
+}
+
+legend  {
+    padding: 0;
+    color: #000;
+    font-weight: bold;
+}
+
+legend span {
+    position: absolute;
+    left: 0.74em;
+    top: 0;
+    margin-top: 0.5em;
+    font-size: 135%;
+}
+
+fieldset ol {
+    padding: 3.5em 1em 0 0;
+    list-style: none;
+}
+
+fieldset li {
+    float: left;
+    clear: left;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+fieldset.submit {
+    float: none;
+    width: auto;
+    border: 0 none #fff;
+    padding-left: 13.4em;
+    border-style: none;
+    background-color: transparent;
+    background-image: none;
+}
+
+label   {
+    float: left;
+    width: 10em;
+    margin-right: 1em;
+    text-align: right;
+}
+
+label.error {
+    font-size: 85%;
+    color: green;
+    width: 12em;
+}

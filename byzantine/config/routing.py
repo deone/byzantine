@@ -17,7 +17,10 @@ def make_map():
     map.connect('error/:action/:id', controller='error')
 
     # CUSTOM ROUTES HERE
+
+    # Top level app urls
     map.connect('root', '/', controller='home', action='index')
+    map.connect('libman', '/librarymanager', controller='libman', action='index')
 
     map.connect(':controller/:action/:id')
     map.connect('*url', controller='template', action='view')

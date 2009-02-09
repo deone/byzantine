@@ -1,0 +1,50 @@
+<%def name="page_content()"></%def>
+
+<%def name="title()"></%def>
+
+<%def name="custom_css()"></%def>
+
+<%def name="custom_js()"></%def>
+
+<%def name="banner()">
+    <h1 class="alpha omega grid_12">
+        ${self.logo()}
+    </h1>
+</%def>
+
+<%def name="logo()">
+    <div id="logo">
+        <h2>Byzantine</h2>
+        <h6>A collection of apps built with the Pylons Web Framework</h6>
+    </div>
+</%def>
+
+<%def name="main()">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            ${self.title()}
+
+            <link rel="stylesheet" type="text/css" media="all" href="/css/main.css"/>
+
+            ${self.custom_css()}
+
+            <script type="text/javascript" src="/js/jquery.js"></script>
+            <!--<script type="text/javascript" src="/js/jquery.validate.js"></script>
+            <script type="text/javascript" src="/js/jquery.form.js"></script>
+            <script type="text/javascript" src="/js/jquery.selectboxes.js"></script>
+
+            <script type="text/javascript" src="/js/main.js"></script>-->
+
+            ${self.custom_js()}
+        </head>
+        <body>
+            <div class="container_12">
+                ${self.banner()}
+                ${self.page_content()}
+            </div>
+        </body>
+    </html>
+</%def>
+
+${self.main()}

@@ -1,0 +1,34 @@
+<%inherit file="base_inner.html"/>
+
+<%def name="mod_title()">Home</%def>
+
+<%def name="custom_js()"></%def>
+
+<%def name="page_content()">
+    
+    <div id="login-error" class="message"></div>
+     
+    <form name="login" id="login">
+        <fieldset>
+            <legend>
+                <span>Login</span>
+            </legend>
+            <ol>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email"/>
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"/>
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset class="submit">
+            <input class="submit" type="submit" value="Login"/>
+        </fieldset>
+    </form>
+
+
+</%def>

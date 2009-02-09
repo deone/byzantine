@@ -1,0 +1,43 @@
+/* Import 960 css framework */
+@import "960/reset.css";
+@import "960/960.css";
+@import "960/text.css";
+
+@import "login.css";
+
+h1 {
+    border-bottom: solid 3px #c2c2c2;
+    margin-bottom: 30px;
+}
+
+h2, h6  {
+    margin: 0;
+}
+
+h6  {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.err  {
+    font-weight: bold;
+    color: #f00;
+}
+
+.message    {
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    text-align: center;
+    display: none;
+}
+
+.panel  {
+    border-top: solid 2px #999;
+    border-bottom: solid 2px #999;
+    background-color: #e6e8fa;
+}
+
+.clear-float {
+    float: none;
+    clear: both;
+}
