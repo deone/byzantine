@@ -1,34 +1,37 @@
 <%inherit file="base_inner.html"/>
 
-<%def name="mod_title()">Home</%def>
+<%def name="mod_title()">Login</%def>
 
-<%def name="custom_js()"></%def>
+<%def name="custom_js()">
+    <script type="text/javascript" src="/js/login.js"></script>
+</%def>
 
 <%def name="page_content()">
     
-    <div id="login-error" class="message"></div>
-     
-    <form name="login" id="login">
-        <fieldset>
-            <legend>
-                <span>Login</span>
-            </legend>
-            <ol>
-                <li>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email"/>
-                </li>
-                <li>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password"/>
-                </li>
-            </ol>
-        </fieldset>
+    <div class="grid_5 alpha">
+        <div id="login-error" class="message"></div>
+         
+        <form name="login" id="login" class="panel">
+            <fieldset>
+                <legend>
+                    <span>Login</span>
+                </legend>
+                <ol>
+                    <li>
+                        <label for="username">User name</label>
+                        <input type="text" id="username" name="username"/>
+                    </li>
+                    <li>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password"/>
+                    </li>
+                </ol>
+            </fieldset>
 
-        <fieldset class="submit">
-            <input class="submit" type="submit" value="Login"/>
-        </fieldset>
-    </form>
-
+            <fieldset class="submit">
+                <input class="submit" type="submit" value="Login"/>
+            </fieldset>
+        </form>
+    </div>
 
 </%def>

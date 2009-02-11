@@ -20,7 +20,10 @@ def make_map():
 
     # Top level app urls
     map.connect('root', '/', controller='home', action='index')
+
+    # Library Manager maps
     map.connect('libman', '/librarymanager', controller='libman', action='index')
+    map.connect('dashboard', '/librarymanager/dashboard', controller='libman_dashboard', action='index')
 
     map.connect(':controller/:action/:id')
     map.connect('*url', controller='template', action='view')
